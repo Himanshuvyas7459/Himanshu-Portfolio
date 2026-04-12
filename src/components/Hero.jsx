@@ -8,12 +8,12 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-//   const handleDownload = () => {
-//   const link = document.createElement("a");
-//   link.href = "/resume.pdf";
-//   link.download = "My_Resume.pdf";
-//   link.click();
-// };
+  const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "/HimanshuVyas_MERN_DEVELOPER_Resume.pdf";
+  link.download = "HimanshuVyas_MERN_DEVELOPER_Resume.pdf";
+  link.click();
+};
 
   return (
     <section
@@ -59,7 +59,7 @@ const Hero = () => {
             </button>
 
             <button
-              // onClick={handleDownload}
+              onClick={handleDownload}
             className="px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
               <Download size={20} />
               Download Resume
@@ -69,7 +69,7 @@ const Hero = () => {
           {/* Social */}
           <div className="flex gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/Himanshuvyas7459"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all hover:scale-110"
@@ -78,7 +78,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/himanshu-vyas07"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all hover:scale-110"

@@ -8,6 +8,13 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+//   const handleDownload = () => {
+//   const link = document.createElement("a");
+//   link.href = "/resume.pdf";
+//   link.download = "My_Resume.pdf";
+//   link.click();
+// };
+
   return (
     <section
       id="home"
@@ -51,7 +58,9 @@ const Hero = () => {
               View Projects
             </button>
 
-            <button className="px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
+            <button
+              // onClick={handleDownload}
+            className="px-8 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
               <Download size={20} />
               Download Resume
             </button>
@@ -101,3 +110,33 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+
+
+
+// <div className="flex flex-wrap gap-4">
+
+//   {/* View Resume */}
+//   <a 
+//     href="/resume.pdf" 
+//     target="_blank" 
+//     rel="noopener noreferrer"
+//   >
+//     <button className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg flex items-center gap-2">
+//       👁️ View Resume
+//     </button>
+//   </a>
+
+//   {/* Download Resume */}
+//   <a href="/resume.pdf" download>
+//     <button className="px-6 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg border border-gray-200 dark:border-gray-700 flex items-center gap-2">
+//       ⬇️ Download Resume
+//     </button>
+//   </a>
+
+// </div>

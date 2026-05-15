@@ -10,8 +10,8 @@ const Hero = () => {
 
   const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "/HimanshuVyas_MERN_DEVELOPER_Resume.pdf";
-  link.download = "HimanshuVyas_MERN_DEVELOPER_Resume.pdf";
+  link.href = "/Himanshu_Resume.pdf";
+  link.download = "Himanshu_Resume.pdf";
   link.click();
 };
 
@@ -45,7 +45,7 @@ const Hero = () => {
             </h2>
 
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
-  MERN Stack Developer focused on building AI-powered, scalable applications and delivering impactful digital experiences.
+  Full Stack Developer focused on building AI-powered, scalable applications and delivering impactful digital experiences.
 </p>
           </div>
 
